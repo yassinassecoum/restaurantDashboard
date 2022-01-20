@@ -72,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
         padding:8px;
     }
     .listItemIcon{
-        min-width: 0px;
+        min-width: 0px!important;
     }
     .listItemText span{
         color:white;
