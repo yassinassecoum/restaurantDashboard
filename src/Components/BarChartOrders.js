@@ -47,7 +47,7 @@ const BarChartOrders = () => {
     maintainAspectRation: false,
     responsive: true,
   };
-  return <Bar data={data} options={options} />;
+  return <Bar data={data} options={options} height={100} />;
 };
 
 export default BarChartOrders;
