@@ -21,7 +21,6 @@ const BarChartOrders = () => {
     ],
     datasets: [
       {
-        label: "Last week orders",
         data: [12, 19, 8, 15, 24, 13],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
