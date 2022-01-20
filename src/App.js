@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import CardSection from "./Components/CardSection";
+import Header from "./Components/Header";
+import DataSection from "./Components/DataSection";
+import PricingSection from "./Components/PricingSection";
+import FAQSection from "./Components/FAQSection";
+import { OuterLayout } from "./styles/Layouts";
+import HeaderLandingContent from "./Components/HeaderLandingContent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Header toRender={<HeaderLandingContent />} />
+      <OuterLayout>
+        <Main>
+          <CardSection />
+          <DataSection />
+          <PricingSection />
+          <FAQSection />
+        </Main>
+      </OuterLayout>
+    </Main>
   );
 }
+
+const Main = styled.main``;
 
 export default App;
