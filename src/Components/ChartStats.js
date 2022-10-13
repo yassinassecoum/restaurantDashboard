@@ -20,6 +20,11 @@ const ChartStatsStyled = styled.div`
   height: 10rem;
   padding: 2rem;
   box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
+  @media screen and (max-width: 532px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   h4 {
     font-size: 3rem;
     color: var(--purple-primary);

@@ -61,6 +61,9 @@ const DataStyled = styled.section`
           display: flex;
           padding-bottom: 1.3rem;
           justify-content: space-between;
+          @media screen and (max-width: 532px) {
+            flex-direction: column;
+          }
         }
       }
     }
